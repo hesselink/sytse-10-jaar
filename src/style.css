@@ -1,0 +1,117 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#canvas {
+  width: 801px;
+  height: 801px;
+}
+
+button.menu-button {
+  display: block;
+  height: 40px;
+  width: 50px;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 1px 0 0 0;
+}
+
+#input-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #888;
+  display: none;
+  margin: 50px 20px;
+  background: #bbb;
+}
+
+#input-popup.visible {
+  display: block;
+}
+
+button.input-button {
+  display: block;
+  height: 80px;
+  width: 80px;
+  font-size: 3em;
+  margin: 10px;
+}
+
+#controls {
+  position: absolute;
+  left: 810px;
+  top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 120px;
+  margin: 10px;
+}
+
+#end {
+  display: none;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 2.5em;
+  text-shadow: 2px 2px black;
+  width: 100%;
+  height: 100%;
+  background: url('lego_background.jpg');
+  padding-top: 1px;
+}
+
+span.img {
+  height: 100%;
+  width: 100%;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#up, #down {
+  margin: 0 50px;
+  flex: 3;
+}
+
+#up .img {
+  background-image: url('up.png');
+}
+
+#right .img {
+  background-image: url('right.png');
+}
+
+#down .img {
+  background-image: url('down.png');
+}
+
+#left .img {
+  background-image: url('left.png');
+}
+
+#run .img {
+  background-image: url('play.webp');
+}
+
+#program {
+  width: 100%;
+}
+
+img.instr {
+  width: 25px;
+}
+
+img.instr:hover {
+  opacity: 50%;
+}
